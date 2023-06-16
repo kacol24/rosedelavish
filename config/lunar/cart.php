@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -9,7 +11,7 @@ return [
     | Specify the session key used when fetching the cart.
     |
     */
-    'session_key' => 'lunar_cart',
+    'session_key' => Str::slug(env('APP_NAME', 'lunar'), '_') . '_cart',
 
     /*
     |--------------------------------------------------------------------------
