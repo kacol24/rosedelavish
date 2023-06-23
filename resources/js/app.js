@@ -1,1 +1,1 @@
-import './bootstrap';
+import '../theme/js/main.js';

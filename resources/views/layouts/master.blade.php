@@ -12,16 +12,23 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
           rel="stylesheet">
-
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css,npm/magnific-popup@1.1.0/dist/magnific-popup.min.css,npm/jquery-nice-select@1.1.0/css/nice-select.min.css,npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">--}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">--}}
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-nice-select@1.1.0/css/nice-select.min.css">--}}
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">--}}
+{{--    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/nice-select.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">--}}
+{{--    <link rel="stylesheet" href="css/style.css" type="text/css">--}}
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
 <body>
@@ -718,15 +725,25 @@
 <!-- Js Plugins -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.6.2,npm/magnific-popup@1.1.0,npm/jquery-nice-select@1.1.0,npm/jquery.nicescroll@3.7.6,npm/jquery-countdown@2.2.0,npm/mixitup@3.3.1,npm/owl.carousel@2.3.4,npm/slicknav@1.0.8/dist/jquery.slicknav.min.js"></script>
+{{--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/jquery-nice-select@1.1.0/js/jquery.nice-select.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/jquery.nicescroll@3.7.6/jquery.nicescroll.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/jquery-countdown@2.2.0/dist/jquery.countdown.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.8/dist/jquery.slicknav.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/mixitup@3.3.1/dist/mixitup.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>--}}
+{{--<script src="js/bootstrap.min.js"></script>--}}
+{{--<script src="js/jquery.nice-select.min.js"></script>--}}
+{{--<script src="js/jquery.nicescroll.min.js"></script>--}}
+{{--<script src="js/jquery.magnific-popup.min.js"></script>--}}
+{{--<script src="js/jquery.countdown.min.js"></script>--}}
+{{--<script src="js/jquery.slicknav.js"></script>--}}
+{{--<script src="js/mixitup.min.js"></script>--}}
+{{--<script src="js/owl.carousel.min.js"></script>--}}
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>
