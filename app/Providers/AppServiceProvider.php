@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Admin;
+use App\Models\Staff;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app['config']->set('auth.providers.staff', [
             'driver' => 'eloquent',
-            'model'  => Admin::class,
+            'model'  => Staff::class,
         ]);
 
         $this->app['config']->set('auth.guards.staff', [
