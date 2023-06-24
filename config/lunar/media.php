@@ -1,13 +1,13 @@
 <?php
 
-use Lunar\Base\StandardMediaConversions;
+use App\Media\Conversions\StorefrontConversions;
 
 return [
     'conversions' => [
-        StandardMediaConversions::class,
+        StorefrontConversions::class,
     ],
-    'fallback' => [
-        'url' => env('FALLBACK_IMAGE_URL', null),
+    'fallback'    => [
+        'url'  => env('FALLBACK_IMAGE_URL', null),
         'path' => env('FALLBACK_IMAGE_PATH', null),
     ],
 ];
