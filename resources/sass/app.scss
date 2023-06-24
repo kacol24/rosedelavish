@@ -1,4 +1,80 @@
 @import "../theme/css/elegant-icons.css";
 @import "../theme/css/slicknav.min.css";
 
+.header__menu {
+    display: flex;
+}
+
 @import "../theme/sass/style";
+
+.header__logo {
+    max-width: 200px;
+}
+
+.navbar-toggler-button {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    .canvas__open {
+        position: relative;
+        top: 0;
+    }
+}
+
+.footer {
+    background: #fee8ea;
+
+    a {
+        color: #e2677c;
+    }
+
+    &__widget {
+        h6 {
+            color: #961c31;
+        }
+
+        ul {
+            li {
+                a {
+                    color: #333
+                }
+            }
+        }
+
+        .footer__newslatter p {
+            color: #333;
+        }
+    }
+
+    &__about p {
+        color: #333;
+    }
+}
+
+.header__menu {
+    ul {
+        li {
+            a {
+                &:after {
+                    background: #961c31;
+                }
+            }
+        }
+    }
+}
+
+.search-model {
+    background: #fee8ea;
+}
+
+.search-close-switch {
+    background: #e2677c;
+}
+
+.header__top {
+    background: #961c31;
+}

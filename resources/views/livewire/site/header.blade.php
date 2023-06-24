@@ -82,13 +82,13 @@
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('img/logo.png') }}" alt="logo">
+                            <img src="{{ asset('images/logo.png') }}" alt="logo">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <nav class="header__menu mobile-menu">
-                        <ul>
+                    <nav class="header__menu mobile-menu h-100 align-items-center">
+                        <ul class="w-100">
                             <li @class(['active' => request()->routeIs(['home'])])>
                                 <a href="{{ route('home') }}">Home</a>
                             </li>
@@ -115,27 +115,31 @@
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-3">
-                    <div class="header__nav__option">
-                        <a href="#" class="search-switch">
-                            <img src="{{ asset('img/icon/search.png') }}" alt="icon search">
-                        </a>
-                        <a href="#">
-                            <img src="{{ asset('img/icon/heart.png') }}" alt="icon wishlist">
-                        </a>
-                        <a href="#">
-                            <img src="{{ asset('img/icon/cart.png') }}" alt="icon cart"> <span>0</span>
-                        </a>
-                        @if($this->cart)
-                            <div class="price">
-                                {{ \Lunar\Models\Currency::getDefault()->code }}
-                                {{ optional($this->cart)->subTotal ?? 0 }}
-                            </div>
-                        @endif
+                    <div class="h-100 d-flex align-items-center justify-content-end">
+                        <div class="header__nav__option">
+                            <a href="#" class="search-switch">
+                                <img src="{{ asset('img/icon/search.png') }}" alt="icon search">
+                            </a>
+                            <a href="#">
+                                <img src="{{ asset('img/icon/heart.png') }}" alt="icon wishlist">
+                            </a>
+                            <a href="#">
+                                <img src="{{ asset('img/icon/cart.png') }}" alt="icon cart"> <span>0</span>
+                            </a>
+                            @if($this->cart)
+                                <div class="price">
+                                    {{ \Lunar\Models\Currency::getDefault()->code }}
+                                    {{ optional($this->cart)->subTotal ?? 0 }}
+                                </div>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="canvas__open">
-                <i class="fa fa-bars"></i>
+            <div class="navbar-toggler-button">
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
