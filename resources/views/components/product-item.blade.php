@@ -1,7 +1,7 @@
 @props(['product'])
 
 <div @class(['product__item', 'sale'])>
-    <div class="product__item__pic set-bg" data-setbg="{{ $product->thumbnail?->getUrl('product-thumbnail') }}">
+    <div class="product__item__pic set-bg" style="background-image: url({{ $product->thumbnail->getUrl('product-thumbnail') }})">
         {{--        <span class="label">Sale</span>--}}
         <ul class="product__hover">
             <li>

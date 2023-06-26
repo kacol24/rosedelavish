@@ -9,7 +9,7 @@ return [
         StorefrontConversions::class,
     ],
     'fallback'    => [
-        'url'  => env('FALLBACK_IMAGE_URL', null),
+        'url'  => env('FALLBACK_IMAGE_URL', asset('images/placeholder.jpg')),
         'path' => env('FALLBACK_IMAGE_PATH', null),
     ],
 ];
