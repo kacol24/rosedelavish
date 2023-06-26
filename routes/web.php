@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Pages\CatalogPage;
 use App\Http\Livewire\Pages\HomePage;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePage::class)
      ->name('home');
+
+Route::get('/catalog', CatalogPage::class)
+     ->name('catalog.index');

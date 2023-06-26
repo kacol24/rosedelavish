@@ -39,7 +39,11 @@
 @yield('showcase')
 <!-- Product Section End -->
 
+@yield('before_content')
+
 {{ $slot }}
+
+@yield('after_content')
 
 <!-- Categories Section Begin -->
 @yield('cta')

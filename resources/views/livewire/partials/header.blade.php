@@ -92,8 +92,8 @@
                             <li @class(['active' => request()->routeIs(['home'])])>
                                 <a href="{{ route('home') }}">Home</a>
                             </li>
-                            <li>
-                                <a href="./shop.html">Shop</a>
+                            <li @class(['active' => request()->routeIs(['catalog.index'])])>
+                                <a href="{{ route('catalog.index') }}">Shop</a>
                             </li>
                             <li>
                                 <a href="#">Pages</a>
