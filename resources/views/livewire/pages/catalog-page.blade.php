@@ -19,7 +19,7 @@
 @endsection
 
 <!-- Shop Section Begin -->
-<section class="shop spad">
+<section class="shop spad" style="position: relative;">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
@@ -188,11 +188,7 @@
             <div class="col-lg-9">
                 <div class="shop__product__option">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="shop__product__option__left">
-                                <p>Showing 1–12 of 126 results</p>
-                            </div>
-                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6"></div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="shop__product__option__right">
                                 <p>Sort by Price:</p>
@@ -206,17 +202,6 @@
                     </div>
                 </div>
                 @livewire('components.catalog')
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="product__pagination">
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <span>...</span>
-                            <a href="#">21</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

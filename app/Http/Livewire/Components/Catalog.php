@@ -8,15 +8,23 @@ use Lunar\Models\Product;
 
 class Catalog extends Component
 {
-    public function getProductsProperty()
+    protected $products = [];
+
+    public $readyToLoad = false;
+
+    public function loadProducts()
     {
-        return Product::query()
-                      ->status(ProductStatus::STATUS_PUBLISHED)
-                      ->get();
+        $this->readyToLoad = true;
     }
 
     public function render()
     {
-        return view('livewire.components.catalog');
+        return view('livewire.components.catalog', [
+            'products' => $this->readyToLoad
+                ? Product::query()
+                         ->status(ProductStatus::STATUS_PUBLISHED)
+                         ->paginate(12)
+                : [],
+        ]);
     }
 }
