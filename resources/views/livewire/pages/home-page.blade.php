@@ -61,32 +61,32 @@
                     </ul>
                 </div>
             </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <x-product-item/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <x-product-item/>
-                </div>
-            </div>
+{{--            <div class="row product__filter">--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">--}}
+{{--                    <x-product-item/>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </section>
 @endsection
