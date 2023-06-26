@@ -3,7 +3,7 @@
 @isset($product)
     <div @class(['product__item', 'sale'])>
         <div class="product__item__pic set-bg"
-             style="background-image: url({{ $product->thumbnail->getUrl('product-thumbnail') }})">
+             style="background-image: url({{ $product->thumbnail?->getUrl('product-thumbnail') }})">
             {{--        <span class="label">Sale</span>--}}
             <ul class="product__hover">
                 <li>
@@ -22,7 +22,7 @@
             </ul>
         </div>
         <div class="product__item__text">
-            <h6>
+            <h6 style="height: 36px;">
                 {{ $product->translateAttribute('name') }}
             </h6>
             {{--        <div class="rating">--}}

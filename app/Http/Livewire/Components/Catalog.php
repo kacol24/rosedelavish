@@ -4,10 +4,15 @@ namespace App\Http\Livewire\Components;
 
 use App\Constants\ProductStatus;
 use Livewire\Component;
+use Livewire\WithPagination;
 use Lunar\Models\Product;
 
 class Catalog extends Component
 {
+    use WithPagination;
+
+    protected $paginationTheme = 'bootstrap';
+
     protected $products = [];
 
     public $readyToLoad = false;
@@ -23,7 +28,7 @@ class Catalog extends Component
             'products' => $this->readyToLoad
                 ? Product::query()
                          ->status(ProductStatus::STATUS_PUBLISHED)
-                         ->paginate(12)
+                         ->paginate(1)
                 : [],
         ]);
     }
