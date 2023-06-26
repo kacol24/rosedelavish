@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Site;
+namespace App\Http\Livewire\Partials;
 
 use Livewire\Component;
 use Lunar\Facades\CartSession;
@@ -21,6 +21,6 @@ class Header extends Component
 
     public function render()
     {
-        return view('livewire.site.header');
+        return view('livewire.partials.header');
     }
 }

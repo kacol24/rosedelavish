@@ -25,7 +25,7 @@
     <div class="loader"></div>
 </div>
 
-@livewire('site.header')
+@livewire('partials.header')
 
 <!-- Hero Section Begin -->
 @yield('hero')
@@ -53,7 +53,7 @@
 @yield('articles')
 <!-- Latest Blog Section End -->
 
-@livewire('site.footer')
+@livewire('partials.footer')
 
 <!-- Js Plugins -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
