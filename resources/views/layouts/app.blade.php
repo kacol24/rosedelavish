@@ -11,8 +11,10 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">--}}
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css,npm/magnific-popup@1.1.0/dist/magnific-popup.min.css,npm/jquery-nice-select@1.1.0/css/nice-select.min.css,npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+          href="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css,npm/jquery-nice-select@1.1.0/css/nice-select.min.css,npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
     <!-- Css Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -20,11 +22,6 @@
 </head>
 
 <body>
-<!-- Page Preloder -->
-<div id="preloder">
-    <div class="loader"></div>
-</div>
-
 @livewire('partials.header')
 
 <!-- Hero Section Begin -->
