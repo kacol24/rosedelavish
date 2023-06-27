@@ -11,7 +11,7 @@
     <div class="row" wire:loading.remove>
         @foreach($products as $product)
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <a href="{{ $product->defaultUrl->slug }}">
+                <a href="{{ route('products.show', $product->defaultUrl->slug) }}">
                     <x-product-item :product="$product"/>
                 </a>
             </div>

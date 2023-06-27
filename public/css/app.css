@@ -4494,6 +4494,10 @@ ol {
 
 a {
   text-decoration: none;
+  color: #e2677c;
+}
+a:hover {
+  color: #961c31;
 }
 
 .pagination .page-link {
@@ -4519,4 +4523,21 @@ a {
 }
 .pagination .page-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.product__details__text p {
+  margin-bottom: 0.5rem;
+}
+.product__details__text h3 del {
+  color: #b7b7b7;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+.product__details__text h3 span {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
 }

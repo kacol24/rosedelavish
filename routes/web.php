@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Pages\CatalogPage;
 use App\Http\Livewire\Pages\HomePage;
+use App\Http\Livewire\Pages\ProductDetailPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,6 @@ Route::get('/', HomePage::class)
 
 Route::get('/catalog', CatalogPage::class)
      ->name('catalog.index');
+
+Route::get('/product/{slug}', ProductDetailPage::class)
+     ->name('products.show');
