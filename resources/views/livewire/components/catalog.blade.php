@@ -28,15 +28,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 text-end">
                     {{ $products->links() }}
-                    <div class="product__pagination">
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <span>...</span>
-                        <a href="#">21</a>
-                    </div>
                 </div>
             </div>
         </div>

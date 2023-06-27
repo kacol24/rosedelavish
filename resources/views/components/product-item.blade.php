@@ -57,10 +57,11 @@
         </div>
         <div class="product__item__text">
             <h6>
-                <span class="placeholder col-8"></span>
+                <span class="placeholder col-10"></span>
+                <span class="placeholder col-3"></span>
             </h6>
             <h5>
-                <span class="placeholder col-3"></span>
+                <span class="placeholder placeholder-lg col-6"></span>
             </h5>
         </div>
     </div>

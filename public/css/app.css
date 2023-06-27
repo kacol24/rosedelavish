@@ -4495,3 +4495,28 @@ ol {
 a {
   text-decoration: none;
 }
+
+.pagination .page-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  background: transparent;
+  padding: 0;
+}
+.pagination .active .page-link,
+.pagination .page-item:hover .page-link {
+  border-color: #111111;
+}
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  border-radius: 50%;
+}
+.pagination .page-item:not(:last-child) {
+  margin-right: 10px;
+}
