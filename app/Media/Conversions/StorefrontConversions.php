@@ -14,8 +14,8 @@ class StorefrontConversions
                 'height' => 260,
             ],
             'product-detail'     => [
-                'width'  => 533,
-                'height' => 533,
+                'width'  => 585,
+                'height' => 585,
             ],
             'carousel-thumbnail' => [
                 'width'  => 90,
